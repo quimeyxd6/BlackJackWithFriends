@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blackjack - Mesa de 7 jugadores</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0b3d0b;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .mesa {
+      position: relative;
+      width: 900px;
+      height: 500px;
+      background: radial-gradient(circle at center, #007700, #004400);
+      border: 10px solid #442200;
+      border-radius: 0 0 50% 50%;
+      overflow: hidden;
+    }
+
+    .dealer {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .puesto {
+      position: absolute;
+      width: 100px;
+      height: 60px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Posiciones de los jugadores en el borde curvo (parte superior ahora) */
+    .p0 { bottom: 30px; left: 50%; transform: translateX(-50%); }
+    .p1 { bottom: 70px; left: 20%; transform: translateX(-50%) rotate(15deg); }
+    .p2 { bottom: 90px; left: 35%; transform: translateX(-50%) rotate(10deg); }
+    .p3 { bottom: 100px; left: 50%; transform: translateX(-50%) rotate(0deg); }
+    .p4 { bottom: 90px; left: 65%; transform: translateX(-50%) rotate(-10deg); }
+    .p5 { bottom: 70px; left: 80%; transform: translateX(-50%) rotate(-15deg); }
+    .p6 { bottom: 40px; left: 10%; transform: translateX(-50%) rotate(25deg); }
+
+  </style>
+</head>
+<body>
+  <div class="mesa">
+    <div class="dealer">DEALER</div>
+    <div class="puesto p0">Jugador 1</div>
+    <div class="puesto p1">Jugador 2</div>
+    <div class="puesto p2">Jugador 3</div>
+    <div class="puesto p3">Jugador 4</div>
+    <div class="puesto p4">Jugador 5</div>
+    <div class="puesto p5">Jugador 6</div>
+    <div class="puesto p6">Jugador 7</div>
+  </div>
+</body>
+</html>
