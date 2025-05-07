@@ -53,14 +53,29 @@ body {
         align-items: center;
     }
 
+
     .carta {
-        display: inline-block;
-        border: 1px solid #000;
-        border-radius: 5px;
-        padding: 8px;
-        margin: 4px;
-        font-size: 20px;
+        width: 60px;
+        height: 90px;
         background-color: white;
-        width: 40px;
+        border: 1px solid black;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px;
+        margin: 4px;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      }
+      
+      .valor-superior, .valor-inferior {
+        font-size: 14px;
+        color: black;
+      }
+      
+      .palo {
+        font-size: 24px;
         text-align: center;
       }
